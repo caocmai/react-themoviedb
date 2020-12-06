@@ -6,15 +6,12 @@ function Movie(props) {
 
     return (
         <div className="Movie">
-            <Link to={`/details/${id}`}>
-                <h3>Click ME</h3>
-            </Link>
-
             <div className="Movie-info">
+                <Link to={`/details/${id}`}>
+
                 <div>{title}</div>
-                <p>id: {id}</p>
-                <img src={"http://image.tmdb.org/t/p/w185/"+image} width="10%" alt="space_pic" />
-                
+                <img src={"http://image.tmdb.org/t/p/w500/"+image} width="20%" alt="space_pic" />
+                </Link>         
             </div>
 
         </div>
