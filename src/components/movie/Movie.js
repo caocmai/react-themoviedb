@@ -12,6 +12,7 @@ function Movie(props) {
 
             <div className="Movie-info">
                 <div>{title}</div>
+                <p>id: {id}</p>
                 <img src={"http://image.tmdb.org/t/p/w185/"+image} width="10%" alt="space_pic" />
                 
             </div>

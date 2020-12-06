@@ -33,10 +33,10 @@ class MovieList extends Component {
     }
   
     render() {
-    const movieList = this.state.movies.map(({ title, poster_path}, i) => {
+    const movieList = this.state.movies.map(({ title, poster_path, id}, i) => {
         return (
             <Movie 
-                id={i}
+                id={id}
                 key={title}
                 title={title}
                 image={poster_path}
