@@ -9,8 +9,8 @@ function Movie(props) {
             <div className="Movie-info">
                 <Link to={`/details/${id}`}>
 
-                <div>{title}</div>
-                <img src={"http://image.tmdb.org/t/p/w500/"+image} width="20%" alt="space_pic" />
+                {/* <div>{title}</div> */}
+                <img src={"http://image.tmdb.org/t/p/w500/"+image} width="100%" alt="space_pic" />
                 </Link>         
             </div>
 

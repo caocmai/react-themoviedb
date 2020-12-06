@@ -10,6 +10,10 @@
     color: #fff;
   }
 
+  .site-title {
+    letter-spacing: 9px;
+  }
+
   .Title-Subtitle {
     color: rgba(255, 255, 255, 0.75);
   }
@@ -20,6 +24,12 @@
     color: rgba(255, 255, 255, 0.835);
     font-weight: bold;
     text-decoration: none;
+  }
+
+  .nav-link:hover {
+    color: white;
+    transition: 400ms ;
+    transform: scale(1.2)
   }
 
   .nav-link-active {
@@ -36,4 +46,8 @@
     background-color: rgb(192, 45, 26);
     color: #fff;
     margin: 0;
+  }
+
+  a {
+      color: orange
   }

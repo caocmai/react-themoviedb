@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Movie from "../movie/Movie";
+import './MovieList.css'
 
 class MovieList extends Component {
     constructor(props) {
@@ -10,7 +11,6 @@ class MovieList extends Component {
         movies: []
       }
     }
-  
   
     componentDidMount() {
       fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=33cff2b0fc5d808790ffb3ba68053642&language=en-US&page=1")
@@ -47,22 +47,13 @@ class MovieList extends Component {
   
       if (error) {
         return <div>Error: {error.message} </div>
-  
       } else if (!isLoaded) {
         return <div>Loading...</div>
       } else {
         return (
-          <ul>
-            {/* {movies.map( movie => (
-              <li key={movie.id}>
-                  {movie.title}
-                  <img src={"http://image.tmdb.org/t/p/w185/"+movie.poster_path} width="10%" alt="space_pic" />
-              </li>
-            ))} */}
-            <li>
+          <div className="MovieList">
                 {movieList}
-            </li>
-          </ul>
+          </div>
         )
       }
     }

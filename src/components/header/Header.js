@@ -6,18 +6,13 @@ function Title() {
     return (
       <div className="Title">
         <header>
-        <NavLink
-            className="nav-link"
-            activeClassName="nav-link-active"
-            to="/"><h1>Upcoming Movies</h1></NavLink>
-          
+           <h1 className="site-title">Upcoming Movies</h1>
+            
           <div className="Title-Subtitle">The Lastest Upcoming Movies</div>
-  
-          {/* <NavLink
+          <NavLink
             className="nav-link"
             activeClassName="nav-link-active"
-            exact
-            to="/">List</NavLink> */}
+            to="/">Upcoming</NavLink>
 
           <NavLink
             className="nav-link"

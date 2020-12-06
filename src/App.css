@@ -1,0 +1,39 @@
+.App {
+  background-color: black;
+}
+
+.movie-description {
+  color: white;
+}
+
+.movie-title {
+  color: white;
+}
+
+@keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
+}
+
+.movie-title:hover {
+  color: white;
+  transition: 700ms ;
+  transform: translate(40px, 10px)  scale(1.2)
+}
+
+.movie-detail-section {
+  display: flex;
+
+}
+
+@media only screen and (max-width: 700px) {
+  .movie-detail-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  
+  }
+}

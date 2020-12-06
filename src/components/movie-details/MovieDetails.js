@@ -36,14 +36,14 @@ class MovieDetails extends Component {
       return <div>Loading...</div>;
     } else {
       return (
-        <div>
-          <h1>{result.title}</h1>
+        <div className="movie-detail-section">
+          <h1 className="movie-title">{result.title}</h1>
           <img
             src={"http://image.tmdb.org/t/p/w500/"+result.poster_path}
             width='40%'
             alt='space_pic'
           />
-          <p>{result.overview}</p>
+          <p className="movie-description">{result.overview}</p>
           <a href={`${result.homepage}`}>Movie Homepage</a>
 
         </div>
