@@ -5,7 +5,9 @@ import './MovieList.css'
 class MovieList extends Component {
     constructor(props) {
       super(props)
+      // this.movieType = props.test
       this.state = {
+        movieType: props.movieType,
         error: null,
         isLoaded: false,
         movies: []
@@ -13,7 +15,8 @@ class MovieList extends Component {
     }
   
     componentDidMount() {
-      fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=33cff2b0fc5d808790ffb3ba68053642&language=en-US&page=1")
+      console.log(this.state.movieType)
+      fetch(`https://api.themoviedb.org/3/movie/${this.state.movieType}?api_key=33cff2b0fc5d808790ffb3ba68053642&language=en-US&page=1`)
       .then(res => res.json())
       .then(
         (result) => {

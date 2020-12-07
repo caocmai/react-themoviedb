@@ -8,7 +8,7 @@ function Title() {
         <header>
            <h1 className="site-title">Upcoming Movies</h1>
             
-          <div className="Title-Subtitle">The Lastest Upcoming Movies</div>
+          {/* <div className="Title-Subtitle">The Lastest Upcoming Movies</div> */}
           <NavLink
             className="nav-link"
             activeClassName="nav-link-active"
@@ -18,6 +18,11 @@ function Title() {
             className="nav-link"
             activeClassName="nav-link-active"
             to="/about">About</NavLink>
+
+        <NavLink
+            className="nav-link"
+            activeClassName="nav-link-active"
+            to="/popular">Popular</NavLink>
 
 
         </header>
