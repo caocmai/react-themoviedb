@@ -7,14 +7,13 @@ function Title() {
     <div className='Title'>
       <header>
         <NavLink className='nav-link' to='/'>
-          <h1 className='site-title'>Upcoming Movies</h1>
+          <h1 className='site-title'>Movies</h1>
         </NavLink>
 
-        {/* <div className="Title-Subtitle">The Lastest Upcoming Movies</div> */}
         <NavLink 
         className='nav-link' 
         activeClassName='nav-link-active' 
-        to='/'
+        exact to='/'
         >
           Upcoming
         </NavLink>

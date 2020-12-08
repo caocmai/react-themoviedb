@@ -16,11 +16,13 @@
   @keyframes opacity {
     50% {
       opacity: .7;
+      letter-spacing: 3px;
     }
   }
 
   .site-title {
-    letter-spacing: 9px;
+    letter-spacing: 10px;
+    color: orange;
   }
 
   .Title-Subtitle {

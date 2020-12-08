@@ -45,7 +45,6 @@ class MovieDetails extends Component {
           />
           <p className="movie-description">{result.overview}</p>
           <a href={`${result.homepage}`}>Movie Homepage</a>
-
         </div>
       );
     }
