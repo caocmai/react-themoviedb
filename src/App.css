@@ -3,11 +3,11 @@
 }
 
 .movie-description {
-  color: white;
+  color: rgb(223, 217, 217);
 }
 
 .movie-title {
-  color: white;
+  color: rgba(93, 177, 59, 0.829);
 }
 
 @keyframes mymove {
@@ -28,11 +28,24 @@
 
 }
 
+.movie-detail-section > *{
+  padding: 0em 0.7em;
+  margin: 1px;
+  margin-bottom: 100px;
+}
+
 @media only screen and (max-width: 700px) {
   .movie-detail-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+  }
+
+  .movie-detail-section > *{
+    /* padding: 0em 0.7em; */
+    /* margin: 1px; */
+    margin-bottom: 30px;
   }
 }
 
@@ -56,4 +69,14 @@
 .Movie-info {
   position: relative;
 
+}
+
+.movie-link {
+  color: rgb(48, 48, 216);
+  text-decoration: none;
+}
+
+.about-section {
+  margin-left: 2em;
+  margin-bottom: 2em;
 }

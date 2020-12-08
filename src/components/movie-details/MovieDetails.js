@@ -44,7 +44,7 @@ class MovieDetails extends Component {
             alt='space_pic'
           />
           <p className="movie-description">{result.overview}</p>
-          <a href={`${result.homepage}`}>Movie Homepage</a>
+          <a className="movie-link" href={`${result.homepage}`}>Movie Homepage</a>
         </div>
       );
     }
