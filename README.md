@@ -1,3 +1,7 @@
+# ThemovieDB API Content 
+[![Build Status](https://travis-ci.org/caocmai/hexo-autolinker.svg?branch=main)](https://travis-ci.org/caocmai/hexo-autolinker)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
