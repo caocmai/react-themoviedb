@@ -1,5 +1,5 @@
 # ThemovieDB API Content 
-[![Build Status](https://travis-ci.org/caocmai/hexo-autolinker.svg?branch=main)](https://travis-ci.org/caocmai/hexo-autolinker)
+[![Build Status](https://travis-ci.org/caocmai/hexo-autolinker.svg?branch=main)](https://travis-ci.org/caocmai/react-themoviedb)
 
 
 # Getting Started with Create React App
