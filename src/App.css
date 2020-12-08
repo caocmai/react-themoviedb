@@ -28,11 +28,24 @@
 
 }
 
+.movie-detail-section > *{
+  padding: 0em 0.7em;
+  margin: 1px;
+  margin-bottom: 100px;
+}
+
 @media only screen and (max-width: 700px) {
   .movie-detail-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+  }
+
+  .movie-detail-section > *{
+    /* padding: 0em 0.7em; */
+    /* margin: 1px; */
+    margin-bottom: 30px;
   }
 }
 
@@ -56,4 +69,11 @@
 .Movie-info {
   position: relative;
 
+}
+
+
+
+.movie-link {
+  color: blue;
+  text-decoration: none;
 }
