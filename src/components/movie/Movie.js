@@ -10,10 +10,15 @@ function Movie(props) {
             <div className="Movie-info">
                 <Link to={`/movie_details/${id}`}>
                 <img src={"http://image.tmdb.org/t/p/w500/"+image} width="100%" alt="space_pic" />
-                </Link>    
-                <div className="movieOverview">{`${overview.substring(0, MAX_LENGTH)}...`}</div>     
+                </Link>
+                {/* tertiary logic to limit characters to 250 */}
+                {overview.length > MAX_LENGTH ? 
+                (   
+                <div className="movieOverview">{`${overview.substring(0, MAX_LENGTH)}...`}</div> 
+                ) : (
+                    <div className="movieOverview">{overview}</div> 
+                )}    
             </div>
-
         </div>
     )
 }
