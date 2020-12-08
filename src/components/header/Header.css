@@ -6,7 +6,7 @@
     justify-content: center;
     padding: 1em;
     margin-bottom: 2em;
-    background-color: rgb(192, 45, 26);
+    background-color: rgba(192, 45, 26, 0.856);
     color: #fff;
     animation: opacity 1.5s;
     animation-iteration-count: 1
@@ -54,7 +54,7 @@
     display: flex;
     justify-content: center;
     padding: 1.5em;
-    background-color: rgb(192, 45, 26);
+    background-color: rgba(192, 45, 26, 0.856);
     color: #fff;
     margin: 0;
   }
