@@ -12,6 +12,8 @@ RUN yarn install && yarn cache clean
 
 # add app
 COPY . /app
+EXPOSE 3000
+
 
 # start app
-CMD ["yarn", "run", "build"]
+CMD ["yarn", "run", "build", "--host=0.0.0.0"]
