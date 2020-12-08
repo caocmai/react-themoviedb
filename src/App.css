@@ -3,11 +3,11 @@
 }
 
 .movie-description {
-  color: white;
+  color: rgb(223, 217, 217);
 }
 
 .movie-title {
-  color: white;
+  color: rgba(93, 177, 59, 0.829);
 }
 
 @keyframes mymove {
@@ -71,9 +71,12 @@
 
 }
 
-
-
 .movie-link {
-  color: blue;
+  color: rgb(48, 48, 216);
   text-decoration: none;
+}
+
+.about-section {
+  margin-left: 2em;
+  margin-bottom: 2em;
 }
