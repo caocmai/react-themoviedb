@@ -17,11 +17,11 @@
   100% {top: 100px;}
 }
 
-.movie-title:hover {
+/* .movie-title:hover {
   color: white;
   transition: 700ms ;
   transform: translate(40px, 10px)  scale(1.2)
-}
+} */
 
 .movie-detail-section {
   display: flex;
@@ -33,7 +33,28 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-  
   }
+}
+
+.movieOverview {
+  color: orange;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  background-color: rgba(59, 31, 31, 0.87);
+  display: none;
+  transition: 7s ;
+
+}
+
+.Movie-info:hover .movieOverview {
+  display: block;
+}
+
+.Movie-info {
+  position: relative;
+
 }

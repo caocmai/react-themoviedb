@@ -15,7 +15,7 @@ class MovieList extends Component {
     }
   
     componentDidMount() {
-      console.log(this.state.movieType)
+      // console.log(this.state.movieType)
       fetch(`https://api.themoviedb.org/3/movie/${this.state.movieType}?api_key=33cff2b0fc5d808790ffb3ba68053642&language=en-US&page=1`)
       .then(res => res.json())
       .then(
@@ -36,13 +36,14 @@ class MovieList extends Component {
     }
   
     render() {
-    const movieList = this.state.movies.map(({ title, poster_path, id}, i) => {
+    const movieList = this.state.movies.map(({ title, poster_path, id, overview}, i) => {
         return (
             <Movie 
                 id={id}
                 key={title}
                 title={title}
                 image={poster_path}
+                overview={overview}
             />
         )
     })

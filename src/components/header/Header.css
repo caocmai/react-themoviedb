@@ -8,6 +8,15 @@
     margin-bottom: 2em;
     background-color: rgb(192, 45, 26);
     color: #fff;
+    animation: opacity 1.5s;
+    animation-iteration-count: 1
+
+  }
+
+  @keyframes opacity {
+    50% {
+      opacity: .7;
+    }
   }
 
   .site-title {
