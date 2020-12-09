@@ -1,18 +1,16 @@
-# pull base image
-FROM node:alpine
-
-# set working directory
+# stage1 - build react app first 
+FROM node:13.12.0-alpine as build
 WORKDIR /app
-
-# install dependies
-COPY package.json /app
-
-# install yarn
-RUN yarn install && yarn cache clean
-
-# add app
+ENV PATH /app/node_modules/.bin:$PATH
+COPY ./package.json /app/
+RUN yarn --silent
 COPY . /app
-# EXPOSE 3000
+RUN yarn build
 
-# start app
-CMD ["yarn", "run", "build"]
+# stage 2 - build the final image and copy the react build files
+FROM nginx:stable-alpine
+COPY --from=build /app/build /usr/share/nginx/html
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx/nginx.conf /etc/nginx/conf.d
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
