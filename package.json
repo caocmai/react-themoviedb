@@ -1,6 +1,6 @@
 {
   "name": "react-themoviedb",
-  "homepage": "https://caocmai.github.io/react-themoviedb",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -26,7 +26,7 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY ./package.json /app/
 RUN yarn --silent
 COPY . /app
-RUN yarn build
+RUN yarn start
 
 # stage 2 - build the final image and copy the react build files
 FROM nginx:1.17.8-alpine
