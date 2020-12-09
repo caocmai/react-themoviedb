@@ -18,12 +18,29 @@ function Title() {
           Upcoming
         </NavLink>
 
+
+        <NavLink
+          className='nav-link'
+          activeClassName='nav-link-active'
+          to='/now_playing'
+        >
+          Now Playing
+        </NavLink>
+
         <NavLink
           className='nav-link'
           activeClassName='nav-link-active'
           to='/popular'
         >
           Popular
+        </NavLink>
+
+        <NavLink
+          className='nav-link'
+          activeClassName='nav-link-active'
+          to='/top_rated'
+        >
+          Top Rated
         </NavLink>
 
         <NavLink

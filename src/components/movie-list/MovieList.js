@@ -13,7 +13,26 @@ class MovieList extends Component {
         movies: []
       }
     }
-  
+
+    capitalize(str){
+      return str.charAt(0).toUpperCase() + str.slice(1);
+      }
+
+    renderSwitch(movieType) {
+      switch(movieType) {
+        case 'upcoming':
+          return this.capitalize(movieType);
+        case 'popular':
+          return this.capitalize(movieType);
+        case 'top_rated':
+          return 'Top Rated';
+        case 'now_playing':
+          return "Now Playing";
+        default:
+          return 'foo';
+      }
+    }
+      
     componentDidMount() {
       // console.log(this.state.movieType)
       fetch(`https://api.themoviedb.org/3/movie/${this.state.movieType}?api_key=33cff2b0fc5d808790ffb3ba68053642&language=en-US&page=1`)
@@ -47,7 +66,7 @@ class MovieList extends Component {
             />
         )
     })
-      const { error, isLoaded, movies } = this.state
+      const { error, isLoaded, movieType } = this.state
   
       if (error) {
         return <div>Error: {error.message} </div>
@@ -55,8 +74,11 @@ class MovieList extends Component {
         return <div>Loading...</div>
       } else {
         return (
-          <div className="MovieList">
-                {movieList}
+          <div>
+            <h1 className="section-title">{this.renderSwitch(movieType)}</h1>
+            <div className="MovieList">
+                  {movieList}
+            </div>
           </div>
         )
       }

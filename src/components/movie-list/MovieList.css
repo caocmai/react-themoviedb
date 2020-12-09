@@ -3,3 +3,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin: 4%;
 }
+
+.section-title {
+    color: #c5a880;
+    display: flex;
+    justify-content: center;
+}
