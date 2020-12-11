@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/caocmai/react-themoviedb.svg?branch=main)](https://travis-ci.org/caocmai/react-themoviedb)
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/caocmai/react-themoviedb)
 # React + ThemovieDB API 
-This web app makes requests to [themoviedb API](https://developers.themoviedb.org/3/getting-started/introduction) and display its content using just React Components. This project is currently deployed to both [gitHub pages](https://caocmai.github.io/react-themoviedb) and on [my site](https://caothemoviedb.dev.caomai.live/#/).
+This web app makes requests to [themoviedb API](https://developers.themoviedb.org/3/getting-started/introduction) and display its content using only React Components. This project is currently deployed to both [gitHub pages](https://caocmai.github.io/react-themoviedb) and to [my site](https://caothemoviedb.dev.caomai.live/#/).
 
 ## Technologies Used
 - [Reactjs v17.0.1](https://reactjs.org/)
@@ -11,13 +11,13 @@ This web app makes requests to [themoviedb API](https://developers.themoviedb.or
 ### Run Using NPM or Yarn
 To run this project make sure you have [nodejs](https://nodejs.org/en/) installed. 
 
-To install dependencies using NPM: ```$ npm install```
+To install dependencies by NPM: ```$ npm install```
 
 To run: ```$ npm run start```
 
-Or using yarn to run project
+--Or using yarn to run project--
 
-To install dependencies using Yarn: ```$ yarn install```
+To install dependencies by Yarn: ```$ yarn install```
 
 To run: ```$ yarn run start```
 
