@@ -4,11 +4,12 @@ FROM node:13.12.0-alpine as build
 WORKDIR /app
 # add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
-# install app dependencies
+# add app dependencies
 COPY package.json ./
 COPY package-lock.json ./
 # install npm with a clean slate
 RUN npm ci --silent
+# install react-script
 RUN npm install react-scripts@3.4.1 -g --silent
 # copy app
 COPY . ./
