@@ -4,9 +4,9 @@
 This web app makes requests to [themoviedb API](https://developers.themoviedb.org/3/getting-started/introduction) and display its content using only React Components. This project is currently deployed to both [gitHub pages](https://caocmai.github.io/react-themoviedb) and [my site](https://caothemoviedb.dev.caomai.live/#/).
 
 ## Technologies Used
-- [Reactjs v17.0.1](https://reactjs.org/)
-- [TravisCI](https://travis-ci.com/)
-- [Docker](https://www.docker.com/)
+- [Reactjs v17.0.1](https://reactjs.org/) - Web Framework
+- [TravisCI](https://travis-ci.com/) - For testings
+- [Docker](https://www.docker.com/) - To containerize
 
 ### Run Using NPM or Yarn
 To run this project make sure you have [nodejs](https://nodejs.org/en/) installed. 
