@@ -11,22 +11,15 @@ This web app makes requests to [themoviedb API](https://developers.themoviedb.or
 ### Run Using NPM or Yarn
 To run this project make sure you have [nodejs](https://nodejs.org/en/) installed. 
 
-To install dependencies using NPM:
+To install dependencies using NPM: ```$ npm install```
 
-```$ npm install```
+To run: ```$ npm run start```
 
-To run:
+Or using yarn to run project
 
-```$ npm run start```
+To install dependencies using Yarn: ```$ yarn install```
 
-
-To install dependencies using Yarn:
-
-```$ yarn install```
-
-To run:
-
-```$ yarn run start```
+To run: ```$ yarn run start```
 
 The project will be hosted on http://localhost:3000/
 
@@ -44,5 +37,5 @@ Then to run that build:
 The project will be hosted on http://localhost:3000/
 
 ## Screenshot
-![](screenshots/screenshot1.png)
+![](screenshots/screenshot2.png)
 
