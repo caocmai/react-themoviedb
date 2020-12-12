@@ -1,5 +1,8 @@
 [![Build Status](https://travis-ci.com/caocmai/react-themoviedb.svg?branch=main)](https://travis-ci.org/caocmai/react-themoviedb)
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/caocmai/react-themoviedb)
+[![Uptime Robot status](https://img.shields.io/uptimerobot/status/m779426128-6b6e81ed8dc987db17d4cad2.svg)](https://stats.uptimerobot.com/5VRgVS0oq2)
+
+
 # React + ThemovieDB API 
 This web app makes requests to [themoviedb API](https://developers.themoviedb.org/3/getting-started/introduction) and display its content using only React Components. This project is currently deployed to both [gitHub pages](https://caocmai.github.io/react-themoviedb) and [my Caprover](https://caothemoviedb.dev.caomai.live/#/).
 
