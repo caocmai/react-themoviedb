@@ -5,20 +5,20 @@ import './MovieList.css'
 class MovieList extends Component {
     constructor(props) {
       super(props)
-      // this.movieType = props.test
       this.state = {
-        movieType: props.movieType,
+        movieType: props.movieType, // property is passed into component
         error: null,
         isLoaded: false,
         movies: []
       }
     }
 
+    // helper function to capitalize first letter in word
     capitalize(str){
       return str.charAt(0).toUpperCase() + str.slice(1);
       }
 
-    renderSwitch(movieType) {
+    capitalizeFirstLetter(movieType) {
       switch(movieType) {
         case 'upcoming':
           return this.capitalize(movieType);
@@ -29,12 +29,13 @@ class MovieList extends Component {
         case 'now_playing':
           return "Now Playing";
         default:
-          return 'foo';
+          return 'movie type not valid to capitalize';
       }
     }
       
     componentDidMount() {
       // console.log(this.state.movieType)
+      // this.state.movieType is passed in as property of component
       fetch(`https://api.themoviedb.org/3/movie/${this.state.movieType}?api_key=33cff2b0fc5d808790ffb3ba68053642&language=en-US&page=1`)
       .then(res => res.json())
       .then(
@@ -75,7 +76,7 @@ class MovieList extends Component {
       } else {
         return (
           <div>
-            <h1 className="section-title">{this.renderSwitch(movieType)}</h1>
+            <h1 className="section-title">{this.capitalizeFirstLetter(movieType)}</h1>
             <div className="MovieList">
                   {movieList}
             </div>

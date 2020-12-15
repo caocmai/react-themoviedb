@@ -9,6 +9,7 @@ function Movie(props) {
         <div className="Movie">
             <div className="Movie-info">
                 <Link to={`/movie_details/${id}`}>
+                {/* this is according to the docs */}
                 <img src={"http://image.tmdb.org/t/p/w500/"+image} width="100%" alt="space_pic" />
                 </Link>
                 {/* tertiary logic to limit characters to 250 */}

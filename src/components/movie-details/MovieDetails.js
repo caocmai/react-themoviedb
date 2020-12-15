@@ -4,7 +4,7 @@ import Movie from "../movie/Movie";
 class MovieDetails extends Component {
   constructor(props) {
     super(props);
-    const { id } = props.match.params; // Location index
+    const { id } = props.match.params; //movie id
 
     console.log(id);
     this.state = {
@@ -15,8 +15,6 @@ class MovieDetails extends Component {
   }
 
   componentDidMount() {
-    // console.log(this.state.result);
-
     fetch(
       `https://api.themoviedb.org/3/movie/${this.state.id}?api_key=33cff2b0fc5d808790ffb3ba68053642&language=en-US`
     )
@@ -38,6 +36,7 @@ class MovieDetails extends Component {
       return (
         <div className="movie-detail-section">
           <h1 className="movie-title">{result.title}</h1>
+          {/* showing image according to the api's docs */}
           <img
             src={"http://image.tmdb.org/t/p/w500/"+result.poster_path}
             width='40%'
