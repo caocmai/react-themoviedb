@@ -11,7 +11,10 @@ This web app makes requests to [themoviedb API](https://developers.themoviedb.or
 - [TravisCI](https://travis-ci.com/) - For testings
 - [Docker](https://www.docker.com/) - To containerize
 
-### Run Using NPM or Yarn
+## Run Locally
+This project can run locally in multiply ways, pick the option that best suits you.
+
+### (Option 1) Run Using NPM or Yarn
 To run this project make sure you have [nodejs](https://nodejs.org/en/) installed. 
 
 To install dependencies by NPM: ```$ npm install```
@@ -26,7 +29,7 @@ To run: ```$ yarn run start```
 
 The project will be accessible locally at port: [3000](http://localhost:3000/)
 
-### Run Using Docker
+### (Option 2) Run Using Docker
 Alternatively, you can run this project with just Docker. In order to use any Docker commands you must have [Docker](https://www.docker.com/) installed on your computer.
 
 Build the project:
