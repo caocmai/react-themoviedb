@@ -49,7 +49,7 @@ The project will be accessible locally at port: [3000](http://localhost:3000/)
 - [Cao](https://www.makeschool.com/portfolio/cao-mai)
 
 ## Resource
-- [Docker Writeup For Project](https://medium.com/@cao.mai/dockerizing-a-react-project-6a4aa35dd1ee)
+- [Project's Docker Writeup](https://medium.com/@cao.mai/dockerizing-a-react-project-6a4aa35dd1ee)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
