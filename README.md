@@ -4,11 +4,11 @@
 
 
 # React + ThemovieDB API 
-This web app makes various requests to [themoviedb API](https://developers.themoviedb.org/3/getting-started/introduction) and displays its content using only React Components. This project is currently deployed to both [gitHub pages](https://caocmai.github.io/react-themoviedb) and [my site](https://caothemoviedb.dev.caomai.live/#/). This project is mobile supported.
+This web app makes various requests to [themoviedb API](https://developers.themoviedb.org/3/getting-started/introduction) and displays its content using only React Components. This project is currently deployed to both [gitHub pages](https://caocmai.github.io/react-themoviedb) and [my site](https://caothemoviedb.dev.caomai.live/#/). Additionally, this project has mobile support. 
 
 ## Technologies Used
 - [Reactjs v17.0.1](https://reactjs.org/) - Web Framework
-- [TravisCI](https://travis-ci.com/) - For testings
+- [TravisCI](https://travis-ci.com/) - For testing purposes
 - [Docker](https://www.docker.com/) - To containerize project
 
 ## Run Locally
