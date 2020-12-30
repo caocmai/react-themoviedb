@@ -4,6 +4,15 @@
     margin: 4%;
 }
 
+/* displays 4 instead of 3 if screen in > 900px */
+@media only screen and (min-width: 900px) {
+    .MovieList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 4%;
+    }
+}
+
 .section-title {
     color: #c5a880;
     display: flex;
