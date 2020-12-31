@@ -48,7 +48,7 @@ The project will be accessible locally at port: [3000](http://localhost:3000/)
 ## Author
 - [Cao](https://www.makeschool.com/portfolio/cao-mai)
 
-## Resource
+## Supplemental Resources
 - [Project's Docker Writeup](https://medium.com/@cao.mai/dockerizing-a-react-project-6a4aa35dd1ee)
 
 ## License
