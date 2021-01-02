@@ -24,7 +24,6 @@ function App() {
           path='/popular'
           render={(props) => <MovieList {...props} movieType='popular' />}
         />
-
         <Route
           path='/top_rated'
           render={(props) => <MovieList {...props} movieType='top_rated' />}
