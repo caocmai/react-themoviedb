@@ -6,7 +6,7 @@ class MovieDetails extends Component {
     super(props);
     const { id } = props.match.params; //movie id
 
-    console.log(id);
+    // console.log(id);
     this.state = {
       id: id,
       isLoaded: false,
@@ -15,6 +15,7 @@ class MovieDetails extends Component {
   }
 
   componentDidMount() {
+    // fetch then convert response to json, then set component's state props with json
     fetch(
       `https://api.themoviedb.org/3/movie/${this.state.id}?api_key=33cff2b0fc5d808790ffb3ba68053642&language=en-US`
     )

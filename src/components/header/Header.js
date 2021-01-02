@@ -18,7 +18,6 @@ function Title() {
           Upcoming
         </NavLink>
 
-
         <NavLink
           className='nav-link'
           activeClassName='nav-link-active'
